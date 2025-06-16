@@ -1,0 +1,87 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+#movie-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    background: white;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#suggestions li {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid #eee;
+}
+
+#suggestions li:last-child {
+    border-bottom: none;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Favori Liste */
+#favorites {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+#favorites li {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Buton */
+#recommend-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recommend-btn:hover {
+    background-color: #125ea2;
+}

@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Öneri Sistemi</title>
+
+   
+    <script defer src="{{ url_for('static', filename='autocomplete.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🎬 Favori Filmlerini Seç</h1>
+
+    <input type="text" id="movie-input" placeholder="Film adı yaz..." autocomplete="off">
+    <ul id="suggestions"></ul>
+
+    <h2>✅ Seçilen Filmler</h2>
+    <ul id="favorites"></ul>
+
+    <button id="recommend-btn">🎯 Önerileri Getir</button>
+
+    <!-- 🔽 BURASI EKSİKTİ: Önerilen filmler buraya yazılacak -->
+    <h2>🎥 Önerilen Filmler</h2>
+    <ul id="recommendation-list"></ul>
+</body>
+</html>
